@@ -1,10 +1,12 @@
 <template>
-    <div>
-      <div>this is template body</div>
-    </div>
+  <div class="header">
+    header
+  </div>
 </template>
 <style>
-
+  .header{
+    text-align: center;
+  }
 </style>
 <script>
 

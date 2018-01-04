@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <div class="header"></div>
+    <div class="header">
+      <vhead></vhead>
+    </div>
     <div class="tab">
       <div class="tabItem">
         <router-link to='/front/subCommodity'>商品</router-link>
@@ -13,7 +15,7 @@
       </div>
     </div>
     <div class="content">
-      内容
+      <router-view></router-view>
     </div>
   </div>
 </template>

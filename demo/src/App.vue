@@ -29,7 +29,7 @@
   }
 </script>
 
-<style>
+<style scoped lang="less" type="text/less">
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -38,12 +38,20 @@
   }
   .tab{
     display: flex;
-  }
-  .tabItem{
-    flex: 1;
-    height: 80px;
-    background-color: #ececea;
-    text-align: center;
-    line-height: 80px;
+    border-top: 1px solid rgba(7,17,27,0.1);
+    .tabItem{
+      flex: 1;
+      height: 80px;
+      text-align: center;
+      line-height: 80px;
+      a{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        &.router-link-active{
+          color: #ff2f3e;
+        }
+      }
+    }
   }
 </style>

@@ -23,6 +23,11 @@
 <script>
   import vhead from './components/header/header'
   export default {
+    data () {
+      return {
+        seller: ''
+      }
+    },
     components: {
       vhead: vhead
     }

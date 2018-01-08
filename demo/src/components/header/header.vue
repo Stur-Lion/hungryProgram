@@ -4,10 +4,14 @@
   </div>
 </template>
 <style>
-  .header{
-    text-align: center;
-  }
+
 </style>
 <script>
-
+  export default {
+    created () {
+      this.$http.post('/hungrydata').then((response) => {
+        console.log(response)
+      })
+    }
+  }
 </script>

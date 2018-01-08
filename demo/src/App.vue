@@ -1,8 +1,7 @@
 <template>
   <div id="app">
     <div class="header">
-      <vhead></vhead>
-    </div>
+      <vhead></vhead></div>
     <div class="tab">
       <div class="tabItem">
         <router-link to='/front/subCommodity'>商品</router-link>

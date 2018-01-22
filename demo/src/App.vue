@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="header">
-      <vhead></vhead></div>
+      <vhead :seller='seller'></vhead></div>
     <div class="tab">
       <div class="tabItem">
         <router-link to='/front/subCommodity'>商品</router-link>
@@ -26,6 +26,12 @@
       return {
         seller: ''
       }
+    },
+    created: function () {
+      this.$http.post('/hungrydata').then((response) => {
+        console.log(response)
+        this.seller = response.body.seller
+      })
     },
     components: {
       vhead: vhead

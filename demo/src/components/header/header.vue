@@ -22,15 +22,13 @@
   export default {
     data () {
       return {
-        seller: ''
+
       }
     },
     created () {
-      this.$http.post('/hungrydata').then((response) => {
-        console.log(response.body.seller)
-        this.seller = response.body.seller
-      })
-    }
+
+    },
+    props: ['seller']
   }
 </script>
 
